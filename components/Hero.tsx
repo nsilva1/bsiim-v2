@@ -10,7 +10,7 @@ const Hero = () => {
         <div className='flex flex-col-reverse md:flex-row justify-between items-center p-10 lg:p-20'>
             <div className='flex flex-col gap-8 items-center md:items-start'>
                <h1 className={`${typography.header} text-center md:text-left`}>Unlocking Potential.<br /> Delivering Growth.</h1>
-               <p className={`${typography.subtitle} text-center md:text-left`}>Your business has untapped strengths. We help you find them and build the framework to scale, innovate, and dominate your market.</p>
+               <p className={`${typography.subtitle} text-center md:text-left`}>Your business has untapped strengths. We help you find them and build<br className='hidden lg:block' /> the framework to scale, innovate, and dominate your market.</p>
                <Link href={'/register'} className={`${themeStyles.buttonBackground} ${themeStyles.buttonText} ${themeStyles.buttonHover} ${typography.paragraph}`}>
                     Get Started
                </Link> 

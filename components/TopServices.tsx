@@ -8,7 +8,7 @@ const TopServices = () => {
     <section className={themeStyles.section}>
         <div className='p-10 lg:p-20'>
             <h2 className={`${typography.subtitle} text-center md:text-left`}>Our Top Services</h2>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-10'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-10 my-10'>
                 {
                     services.splice(0,3).map((service, index) => (
                         <Link href='/services' key={index} className={`${themeStyles.card} rounded-md p-8`}>
@@ -18,6 +18,9 @@ const TopServices = () => {
                     ))
                 }
             </div>
+            <Link href='/services' className={`${themeStyles.buttonBackground} ${themeStyles.buttonText} ${themeStyles.buttonHover} ${typography.paragraph}`}>
+                View More
+            </Link>
         </div>
     </section>
   )
